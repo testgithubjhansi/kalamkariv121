@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-01T11:13:58 IST" name="Suite" finished-at="2025-10-01T11:15:02 IST" duration-ms="63908">
+    <groups>
+    </groups>
+    <test started-at="2025-10-01T11:13:58 IST" name="Test" finished-at="2025-10-01T11:15:02 IST" duration-ms="63908">
+      <class name="testCases.TC002_signinpwdtest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_signinpwdtest@3f9342d4]" started-at="2025-10-01T11:14:24 IST" name="setup" finished-at="2025-10-01T11:14:34 IST" duration-ms="9847" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[window]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="imglogotest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_signinpwdtest@3f9342d4]" started-at="2025-10-01T11:14:34 IST" name="imglogotest" data-provider="loginData" finished-at="2025-10-01T11:14:37 IST" duration-ms="3079" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Support@slkalamkari.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Support@slkw#12]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imglogotest -->
+        <test-method signature="signinpage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_signinpwdtest@3f9342d4]" started-at="2025-10-01T11:14:37 IST" name="signinpage" data-provider="loginData" finished-at="2025-10-01T11:14:47 IST" duration-ms="10075" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Support@slkalamkari.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Support@slkw#12]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='emailOrPhone']"}
+  (Session info: chrome=140.0.7339.208)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9eb897157af05bc4b90b0874d5895b5b, findElement {using=xpath, value=//input[@id='emailOrPhone']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\OPT1~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51934}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51934/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9eb897157af05bc4b90b0874d5895b5b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='emailOrPhone']"}
+  (Session info: chrome=140.0.7339.208)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9eb897157af05bc4b90b0874d5895b5b, findElement {using=xpath, value=//input[@id='emailOrPhone']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\OPT1~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51934}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51934/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9eb897157af05bc4b90b0874d5895b5b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy24.sendKeys(Unknown Source)
+at pageObjects.HomePage.setusername(HomePage.java:28)
+at testCases.TC002_signinpwdtest.signinpage(TC002_signinpwdtest.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signinpage -->
+      </class> <!-- testCases.TC002_signinpwdtest -->
+      <class name="testCases.TC001_signinemailtest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_signinemailtest@2ef14fe]" started-at="2025-10-01T11:13:58 IST" name="setup" finished-at="2025-10-01T11:14:12 IST" duration-ms="13796" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[window]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_email_registration()[pri:0, instance:testCases.TC001_signinemailtest@2ef14fe]" started-at="2025-10-01T11:14:12 IST" name="verify_email_registration" finished-at="2025-10-01T11:14:13 IST" duration-ms="373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_email_registration -->
+        <test-method signature="verify_errmsg_withimpropermail()[pri:0, instance:testCases.TC001_signinemailtest@2ef14fe]" started-at="2025-10-01T11:14:13 IST" name="verify_errmsg_withimpropermail" finished-at="2025-10-01T11:14:18 IST" duration-ms="5799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_errmsg_withimpropermail -->
+        <test-method signature="verify_errmsg_withoutmail()[pri:0, instance:testCases.TC001_signinemailtest@2ef14fe]" started-at="2025-10-01T11:14:18 IST" name="verify_errmsg_withoutmail" finished-at="2025-10-01T11:14:24 IST" duration-ms="5763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_errmsg_withoutmail -->
+      </class> <!-- testCases.TC001_signinemailtest -->
+      <class name="testCases.TC_endtoendtest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_endtoendtest@ab7395e]" started-at="2025-10-01T11:14:47 IST" name="setup" finished-at="2025-10-01T11:14:57 IST" duration-ms="9972" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[window]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="endtoend()[pri:0, instance:testCases.TC_endtoendtest@ab7395e]" started-at="2025-10-01T11:14:57 IST" name="endtoend" finished-at="2025-10-01T11:15:02 IST" duration-ms="5125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endtoend -->
+      </class> <!-- testCases.TC_endtoendtest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
